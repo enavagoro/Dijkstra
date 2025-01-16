@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de la cuadrícula */
+  #grid {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+  }
+  
+  /* Estilo de cada cuadrado */
+  .square {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  /* Estilos para los estados de los cuadrados */
+  .square.start {
+    background-color: green;
+  }
+  
+  .square.end {
+    background-color: red;
+  }
+  
+  .square.blocked {
+    background-color: black;
+  }
+  
+  /* Botones */
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
